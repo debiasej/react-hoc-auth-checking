@@ -1,4 +1,13 @@
 
-li {
+.navbar li {
   display: inherit;
+}
+
+img {
+  width: 50%;
+}
+
+ul.list {
+  width: 50%;
+  display: inline-block;
 }
