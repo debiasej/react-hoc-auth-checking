@@ -10,8 +10,20 @@ export default function(ComposedComponent) {
       router: React.PropTypes.object
     }
 
+    componentWillMount() {
+      this.checkIfAuthenticated(this.props);
+    }
+
+    componentWillUpdate(nextProps) {
+      this.checkIfAuthenticated(nextProps);
+    }
+
+    checkIfAuthenticated(props){
+      if (!props.authenticated)
+        this.context.router.push('/');
+    }
+
     render() {
-      console.log(this.context);
       return <ComposedComponent { ...this.props} />
     }
   }
