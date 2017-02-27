@@ -1,9 +1,9 @@
 {
-  "name": "react-hoc-auth-checking",
+  "name": "react-hoc-auth-learning",
   "version": "1.0.0",
   "description": "Sample project that shows a React HOC for handling authentication",
   "main": "index.js",
-  "repository": "https://github.com/debiasej/react-hoc-auth-checking.git",
+  "repository": "https://github.com/debiasej/react-hoc-auth-learning.git",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
